@@ -1,0 +1,81 @@
+<div class="breadcrumb">
+    <h1>Societe</h1>
+    <ul>
+        <li><a href="">Liste</a></li>
+        <li>Ajouter</li>
+    </ul>
+</div>
+
+<div class="separator-breadcrumb border-top"></div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="card-title mb-3">Nouvelle societe</div>
+                <form [formGroup]="formSociete" (ngSubmit)="submit()">
+                    <div class="row">
+                        <div class="col-md-6 form-group mb-3">
+                            <label for="nom">Nom</label>
+                            <input type="text" class="form-control" id="nom" formControlName="nom" placeholder="Entrer Nom">
+                        </div>
+
+                        <div class="col-md-6 form-group mb-3">
+                            <label for="adresse">Adresse</label>
+                        
+                            <textarea class="form-control" id="adresse" formControlName="adresse" placeholder="Entrer Adresse"></textarea>
+                        </div>
+                      
+                        <div class="col-md-6 form-group mb-3">
+                            <label for="activite">Activite</label>
+                            <input type="text" class="form-control" id="activite"   formControlName="activite" aria-describedby="emailHelp"
+                                placeholder="Enter Activite">
+                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                        </div>
+                        <div class="col-md-6 form-group mb-3">
+                            <label for="matriculeFiscal">Matricle fiscal</label>
+                            <input class="form-control" id="matriculeFiscal"  formControlName="matriculeFiscal" placeholder=" Entrer Matricle fiscal">
+                        </div>
+                        <div class="col-md-6 form-group mb-3">
+                            <label for="tva">TVA</label>
+                            <input class="form-control" id="tva"  formControlName="tva" placeholder="Entrer TVA">
+                        </div>
+                        <div class="col-md-6 form-group mb-3">
+                            <label for="c">C</label>
+                            <input class="form-control" id="c"  formControlName="c" placeholder="Entrer c">
+                        </div>
+                        <div class="col-md-6 form-group mb-3">
+                            <label for="a">A</label>
+                            <input class="form-control" id="a"   formControlName="a" placeholder="Entrer a">
+                        </div>
+                        <div class="col-md-6 form-group mb-3">
+                            <label for="numeroEmployeurCNSS">Numero Employeur CNSS</label>
+                            <input class="form-control" id="numeroEmployeurCNSS"  formControlName="numeroEmployeurCNSS" placeholder="Entrer Numero">
+                        </div>
+
+                        <div class="col-md-6 form-group mb-3">
+                            <label for="cin">CIN</label>
+                            <input class="form-control" id="cin"  formControlName="cin" placeholder="Entrer Cin">
+                        </div>
+
+                        <div class="col-md-6 form-group mb-3">
+                            <label for="codePostal">Code Postal</label>
+                            <input class="form-control" id="codePostal"  formControlName="codePostal"  placeholder="Entrer Code">
+                        </div>
+
+                  
+
+
+                        <div class="col-md-12">
+                            <btn-loading btnClass="btn-primary btn-rounded" [loading]="loading">Submit</btn-loading>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
